@@ -1,7 +1,7 @@
 // Created on: Dec-January 2018/2019
 // Created by: Christian Briglio 
 // Created for: ICS3U
-// This program generates resumes for th given user 
+// This program generates resumes for the user 
 // this will be commented out when code moved to Xcode
 import PlaygroundSupport
 
@@ -45,7 +45,7 @@ class ViewController : UIViewController {
     let thirdLabel = UILabel() 
     let fourthLabel = UILabel()
     
-    
+    // funcation to generate users resume 
     @objc func resume() {
         nameReturn.text = "\(nameText.text!)"
         phoneReturn.text = "\(phoneText.text!)"
@@ -69,6 +69,7 @@ class ViewController : UIViewController {
         view.backgroundColor = #colorLiteral(red: 0.9764705896377563, green: 0.8509804010391235, blue: 0.5490196347236633, alpha: 1.0)
         self.view = view
         
+            //intusction laboes for user 
         nameLabel.text = "Enter your full name"
         view.addSubview(nameLabel)
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -123,6 +124,7 @@ class ViewController : UIViewController {
         skillsLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 260).isActive = true
         skillsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         
+            //Button that creates resume 
         createButton.setTitle("Create", for: .normal)
         createButton.setTitleColor(.blue, for: .normal)
         createButton.titleLabel?.textAlignment = .center
@@ -132,6 +134,7 @@ class ViewController : UIViewController {
         createButton.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 190).isActive = true
         createButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         
+            //text boxes for users information 
         nameText.borderStyle = UITextField.BorderStyle.roundedRect
         nameText.placeholder = "Name"
         view.addSubview(nameText)
@@ -195,6 +198,7 @@ class ViewController : UIViewController {
         skillsText.topAnchor.constraint(equalTo: interestText.bottomAnchor, constant: 0).isActive = true
         skillsText.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 280).isActive = true
         
+            //lables that show users information, to create th resume 
         view.addSubview(nameReturn)
         nameReturn.translatesAutoresizingMaskIntoConstraints = false
         nameReturn.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
@@ -240,6 +244,7 @@ class ViewController : UIViewController {
         skillsReturn.topAnchor.constraint(equalTo: view.topAnchor, constant: 370).isActive = true
         skillsReturn.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 630).isActive = true
         
+            //resume titles 
         firstLabel.text = "Resume"
         view.addSubview(firstLabel)
         firstLabel.translatesAutoresizingMaskIntoConstraints = false
